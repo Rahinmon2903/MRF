@@ -13,3 +13,35 @@
 5)“After the map() operation, if we modify the value of an object in the new array, the same object in the original array will also be changed, because both arrays hold a reference to the same object.”
 6)“Many people get confused thinking that map() alters the original array. The important point is that map() itself does not change any values. If a value in the new array is modified manually, the change appears in the original array only because both arrays hold a reference to the same object.”
                          (ex)sameUsers[0].name = "Changed";(we are changing it manually)
+
+                                            MRF
+                                   (MAP, REDUCE,FUNCTION)
+Map:
+Definition:
+            The map() method does not change the original array; it creates a new array. If the array contains objects, the new array contains references to the same objects. Modifying an object in the new array will affect the original object, but the change is caused by the modification itself, not by map()
+
+Syntax:
+           {emojipedia.map(createEntry)}
+
+
+Filter:
+Definition:
+           It simply filters the array based on a condition. Unlike map(), it does not create references to the original objects.However, when dealing with objects, both filter() and map() create references to the same objects
+
+Syntax:
+        let newreduce=number.filter(x => {
+                  return x>10;
+         })
+        
+
+
+Reduce:
+Definition:
+           reduce() goes through every element in a array and combines all its elements into a single value.
+
+syntax:
+           let sum=num.reduce((x,y) => {
+                  return x+y;
+              })
+           
+           
