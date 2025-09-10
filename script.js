@@ -56,7 +56,7 @@ console.log(people);
 
 
 //Reduce
-let num=[1,2,3,4,5,6,7,8,9,10,11]
+let num=[1,2,3,4,5]
 
 let sum=num.reduce((x,y) => {
     console.log("accumulator = " + x);
@@ -72,9 +72,36 @@ console.log(sum);
 //(ex)(accumulator,currentNumber),(x,y)
 
 
+let number1 = [1, 2, 3, 4, 5, 6, 15];
 
+let newnum1 = number1.filter(x => {
+    return x % 2 == 0;
+});
 
+console.log(newnum1);
+//1
+
+let  fruits=["mango", "orange", "apple"]
+
+let newfruits=fruits.map(x => {
+    return x + "s";
+})
+console.log(newfruits);
  
+//2
+let greater=[10,11,12,89,35,156,199,25,32,87]
+const newgreater=greater.filter(x =>{
+    return x>80;
+})
+console.log(newgreater);
+
+//3
+let largest=[10,12,15,16,8,11];
+const newlargest=largest.reduce((x,y) => {
+    return x>y?x:y
+
+})
+console.log(newlargest);
 
 
 
