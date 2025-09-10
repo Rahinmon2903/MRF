@@ -80,6 +80,32 @@ let newnum1 = number1.filter(x => {
 
 console.log(newnum1);
 //1
+//normal function
+const fruitss = ["mango", "orange", "apple"]
+function fruitssss(x){
+    return x+"s";
+}
+const result1 = fruitss.map(fruitssss)
+console.log(result1);
+
+//an f
+
+const result2 = fruitss.map(
+function (x){
+    return x+"s";
+})
+console.log(result2);
+
+//iif
+const result3 = fruitss.map(
+(function (x){
+    return x+"s";
+}))
+console.log(result2);
+
+
+
+//arrow function
 
 let  fruits=["mango", "orange", "apple"]
 
@@ -87,6 +113,11 @@ let newfruits=fruits.map(x => {
     return x + "s";
 })
 console.log(newfruits);
+
+//OLAF
+let newfruits1=fruits.map(x => x + "s")
+console.log(newfruits1);
+
  
 //2
 let greater=[10,11,12,89,35,156,199,25,32,87]
