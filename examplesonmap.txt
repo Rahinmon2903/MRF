@@ -1,0 +1,15 @@
+//map
+1)emojipedia is the array, which is imported from another file. We are going to use map() on it.
+
+
+2)To use map(), we need to create a function called createEntry.
+
+
+3)We create this function because the array could contain a very large number of objects (e.g., 4.3 billion). We only want a few of them.
+
+
+4)In simple terms, if the array has 10 objects but we need only 5, we create a reference for only the 5 objects that we actually need
+
+5)“After the map() operation, if we modify the value of an object in the new array, the same object in the original array will also be changed, because both arrays hold a reference to the same object.”
+6)“Many people get confused thinking that map() alters the original array. The important point is that map() itself does not change any values. If a value in the new array is modified manually, the change appears in the original array only because both arrays hold a reference to the same object.”
+                         (ex)sameUsers[0].name = "Changed";(we are changing it manually)
